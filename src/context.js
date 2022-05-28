@@ -11,8 +11,8 @@ export class Provider extends Component {
     }
 
     componentDidMount() {
-        axios.get()
-        .then()
+        axios.get(``)
+        .then(res => console.log(res.data))
         .catch(err => console.log(err))
     }
 
