@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <div className='container'>
           <Routes>
-            <Route exact path='/' component={Index} />
+            <Route exact path='/' element={<Index />} />
           </Routes>
         </div>
       </React.Fragment>
