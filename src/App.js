@@ -5,19 +5,23 @@ import React from 'react'
 import Navbar from './components/layout/Navbar.js'
 import Index from './components/layout/Index.js'
 
+import {Provider} from './context';
+
 
 function App() {
   return (
-    <Router>
-      <React.Fragment>
-        <Navbar />
-        <div className='container'>
-          <Routes>
-            <Route exact path='/' element={<Index />} />
-          </Routes>
-        </div>
-      </React.Fragment>
-    </Router>
+    <Provider>
+      <Router>
+        <React.Fragment>
+          <Navbar />
+          <div className='container'>
+            <Routes>
+              <Route exact path='/' element={<Index />} />
+            </Routes>
+          </div>
+        </React.Fragment>
+      </Router>
+    </Provider>
   );
 }
 
