@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Consumer} from '../../context'
+import Spinner from '../layout/Spinner'
 
 class Tracks extends Component {
     render() {
@@ -7,7 +8,11 @@ class Tracks extends Component {
             <Consumer>
                 {value => {
                     console.log(value)
-                    return <h1>Tracks</h1>
+                    if () {
+
+                    } else {
+                        
+                    }
                 }}
             </Consumer>
         )
