@@ -19,7 +19,7 @@ function App() {
           <div className='container'>
             <Routes>
               <Route exact path='/' element={<Index />} />
-              <Route exact path='/lyrics/tracks/:id' element={<Lyrics />} />
+              <Route exact path=':id' element={<Lyrics />} />
             </Routes>
           </div>
         </React.Fragment>
