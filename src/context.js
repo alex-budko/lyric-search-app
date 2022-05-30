@@ -7,7 +7,6 @@ export class Provider extends Component {
     state = {
         track_list: [],
         heading: 'Top 10 Tracks'
-
     }
 
     componentDidMount() {
